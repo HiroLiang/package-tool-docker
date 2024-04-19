@@ -3,3 +3,4 @@ target/*war
 target/projectlombok/
 target/tw/
 targets/*.war
+.vscode/

@@ -9,7 +9,7 @@ ENV server_system_os=linux
 ENV file_seprator=/
 
 # def java runtime env
-ENV datasource_url=jdbc:h2:file:/app/H2_Data;DB_CLOSE_ON_EXIT=FALSE
+ENV datasource_url=jdbc:h2:file:/app/H2_Data/git-package-tool;DB_CLOSE_ON_EXIT=FALSE
 ENV war_store_path=/app/targets
 ENV git_store_path=/app/git
 
@@ -18,7 +18,7 @@ ENV mvn_jdk11_path=/usr/lib/jvm/java-11-openjdk
 ENV mvn_jdk17_path=/usr/lib/jvm/java-17-openjdk
 
 # create folder
-RUN mkdir -p /app/H2_Data && \
+RUN mkdir -p /app/H2_Data/git-package-tool && \
     mkdir -p /app/targets
 
 # download tools
